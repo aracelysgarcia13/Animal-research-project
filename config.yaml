@@ -1,0 +1,109 @@
+    # Project definitions (do not edit)
+Task: Cotton Tail
+scorer: Reese's PB
+date: Nov3
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton
+  Tail-Reese_s PB-2022-11-03
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\filtered-5C9250B6-9486-47A7-8E1E-78C5F16D5443.mov:
+    crop: 0, 512, 0, 960
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\filtered-ABCE0DF2-33A1-4374-BF0C-C547B5C1FBF2.mov:
+    crop: 0, 512, 0, 960
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\filtered-B90B5F06-8BAE-4709-B909-117F03513905.mov:
+    crop: 0, 516, 0, 960
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\IMG_4878.mov:
+    crop: 0, 720, 0, 1280
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\ips-4F69CE75-5170-4F9A-9D9A-6B516BD80933.mov:
+    crop: 0, 516, 0, 960
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\ips-6ABAD377-873F-4BF9-AE58-1B9D5949FBA2.mov:
+    crop: 0, 516, 0, 960
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\ips-39A4D88E-278B-4861-A9B7-4EB9A3D87078.mov:
+    crop: 0, 516, 0, 960
+  /content/drive/MyDrive/Intro2BehvRes - Fall 2022/Class Project/Copies/Cotton Tail-Reese_s PB-2022-11-03/labeled-datavideos\ips-E8358443-66B4-4F64-8A7B-79A013C185AF.mov:
+    crop: 0, 516, 0, 960
+bodyparts:
+- Head
+- Nose
+- Left Eye
+- Right Eye
+- Left Ear
+- Right Ear
+- Front Left Foot
+- Front Right Foot
+- Rear Left Foot
+- Rear Right Foot
+- Tail
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - bodypart1
+  - bodypart2
+- - objectA
+  - bodypart3
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
